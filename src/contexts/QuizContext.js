@@ -6,7 +6,6 @@ const SECS_PER_QUESTION = 30;
 
 const initialState = {
   questions: [],
-
   // 'loading', 'error', 'ready', 'active', 'finished'
   status: "loading",
   index: 0,
@@ -66,7 +65,7 @@ function reducer(state, action) {
       };
 
     default:
-      throw new Error("Action unkonwn");
+      throw new Error("Action unknown");
   }
 }
 
